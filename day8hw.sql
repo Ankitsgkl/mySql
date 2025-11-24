@@ -8,8 +8,7 @@ CREATE TABLE books (
     book_id INT PRIMARY KEY,
     title VARCHAR(200),
     price DECIMAL(10,2),
-    author_id INT,
-    FOREIGN KEY (author_id) REFERENCES authors(author_id));
+    author_id INT);
 ALTER TABLE books ADD published_year INT;
 DELETE FROM books;
 DROP DATABASE BookStoreDB;
